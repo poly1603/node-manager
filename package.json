@@ -1,0 +1,41 @@
+{
+  "name": "@ldesign/node-manager",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "LDesign Node.js 版本管理工具",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rimraf dist",
+    "test": "vitest"
+  },
+  "keywords": [
+    "ldesign",
+    "node",
+    "version-manager",
+    "nvm"
+  ],
+  "author": "LDesign Team",
+  "license": "MIT",
+  "dependencies": {
+    "execa": "^9.5.2",
+    "fs-extra": "^11.2.0",
+    "semver": "^7.6.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.11.0",
+    "@types/semver": "^7.5.6",
+    "tsup": "^8.0.0",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.5"
+  }
+}
